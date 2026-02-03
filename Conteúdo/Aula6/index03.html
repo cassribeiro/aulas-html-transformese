@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgroundo Image</title>
+
+    <style>
+        body{
+            background-image: url(one-direction-dancing.gif);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:100% 100%;
+        }
+        p{
+            -webkit-text-stroke:1px #f002f0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Imagem de Fundo</h1>
+    <p>Exemplos de imagens de fundo</p>
+
+    <!-- <p style="background-image:url(one-direction-dancing.gif);">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Quod qui, ad quo assumenda et facere<br> dolor adipisci labore nulla itaque ab,<br> ea nesciunt?<br> Commodi tempore possimus omnis similique consequatur mollitia.</p> -->
+
+    <picture>
+        <source media="(min-widht:650px)" srcset="workplace.jpg">
+        <source  media="(min-widht:465px)" srcset="char_knight.png">
+        <img src="char_knight.png">
+    </picture>
+</body>
+</html>
